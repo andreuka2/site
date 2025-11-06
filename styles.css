@@ -1,1 +1,66 @@
+:root {
+--fon-color: #034001;
+--color-accent: #9FA7BF;
+--color-addition: #022601;
+--text-color: #9FA7BF;
+} 
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0; 
+  padding: 0; 
+  background-color: var(--fon-color); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  position: relative;
+}
 
+#text-head{ 
+  color: var(--color-accent); 
+  font-size: 1.5rem; 
+}
+
+#loginForm{ 
+  width: 70vmin 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.5rem;
+}  
+#lastName, #password { 
+  border: 0.22vmin solid var(--color-addition); 
+  background-color: var(--color-addition); 
+  color: var(--text-color); 
+  outline: none; 
+}
+.field{ 
+  width: 100%; 
+  padding: 1.25vmin 5%; 
+  border-radius: 1rem; 
+  box-sizing: border-box; 
+  font-size: clamp(16px, 2.35vh, 40px); 
+  transition: all 0.3s ease-in-out; 
+} 
+#loginButton{ 
+  border: 0; 
+  background-color: var(--text-color); 
+  color: var(--color-addition); 
+}
+#lastName:hover, #password:hover{ 
+  border: 0.22vmin solid var(--color-accent); 
+  box-shadow: 0 0 0.5vmin var(--color-accent); 
+} 
+#loginButton:hover{ 
+  transform: scale(1.03); 
+  background-color: var(--color-accent); 
+  font-size: clamp(16px, 2.37vh, 40px); 
+  box-shadow: 0 0 0.5vmin var(--color-accent); 
+}  
+
+
+
+
+
+  
+  
